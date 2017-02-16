@@ -1,0 +1,73 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>change picture</title>
+  
+ 
+       
+      <center>
+       
+      <h1>
+ <p style="color:#F9D649";>Contact Me</p>
+</h1>
+  
+   
+    
+     <font color="white">
+    <p> Interestingly  enough I am always motivated to work with other people in </p>
+	   <p> any field or at least have a chat ...<p>
+  
+	<div class="row">
+		<label for="name">Your name:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<form action="mailto:samihsghier16@augustana.edu" method="post" enctype="text/plain">
+		<label for="email">Your email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="message">How can I help ?</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" /> 
+
+	<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 2000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "file:///Users/samihsghier16/Downloads/Samih/2.png";
+          images[1] = "file:///Users/samihsghier16/Downloads/Samih%202/3.png";
+    images[2] = "http://static.wixstatic.com/media/8d3ca8_818a753e1d4c438981a31d854df149f1.png_srz_279_264_85_22_0.50_1.20_0.00_png_srz";
+
+      
+      </script>
+   </head>
+
+   <body onload = "startTimer()">
+       <img id="img" src="startpicture.jpg"/>
+       
+       <body background="http://www.bijusubhash.com/wp-content/uploads/2012/05/web_texture_background_with_blue_gradiant_small.jpg"">
+
+</form>			
+</center>
+   </head>
+			
+   </body>
+</html>
